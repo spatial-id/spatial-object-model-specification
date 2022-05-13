@@ -79,5 +79,6 @@ interface SOM {
 const space = new Space
 spaceObject = space.getSpacebyId(1234567890)
 
-constr result = spaceObject.south().up().east().contains(123, 35, 100)
+// 南へ一つ、上へひとつ、東へひとつ移動したあとで、そこにスカイツリーの頂上があるかどうかを判定する。
+constr result = spaceObject.south().up().east().contains(139.81088744999997, 35.71027146141545, 634)
 ```
