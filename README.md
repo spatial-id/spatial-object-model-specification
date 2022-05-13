@@ -15,7 +15,7 @@ interface SOM {
 
 ### Space.getSpaceById()
 
-* ID を引数として受け取り空間オブジェクトを取得する。
+* ID を引数として受け取り空間オブジェクトを返す。
 
 ### Space.getSpaceByLocation()
 
