@@ -9,8 +9,21 @@ interface SOM {
   id                 ID;
   center             An array of the lnglat;
   resolution:        The zoom level;
+  afxy:              The ZFXY.
 }
 ```
+
+### Space.getSpaceById()
+
+* ID を引数として受け取り空間オブジェクトを取得する。
+
+### Space.getSpaceByLocation()
+
+* 緯度経度及び高度を引数として受け取り空間オブジェクトを返す。
+
+### Space.getSPaceByZFXY()
+
+* ZFXY を引数として受け取り空間オブジェクトを返す。
 
 ## Methods
 
