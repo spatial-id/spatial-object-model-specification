@@ -80,7 +80,7 @@ interface SOM {
 ## 参考: NodeJS ベースの SDK （があると仮定して）での実装例
 
 ```node
-const space = new Space(12345678)
+const space = new Space(12345678) // 空間ID、緯度経度及び高度、ZFXYのいずれか
 
 // 南へ一つ、上へひとつ、東へひとつ移動したあとで、そこにスカイツリーの頂上があるかどうかを判定する。
 const result = spaceObject.south().up().east().contains(139.81088744999997, 35.71027146141545, 634)
