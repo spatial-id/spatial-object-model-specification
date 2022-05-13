@@ -19,15 +19,15 @@ interface SOM {
 
 ## Methods
 
-### Space.getSpaceById()
+### .getSpaceById()
 
 * ID を引数として受け取り空間オブジェクトを返す。
 
-### Space.getSpaceByLocation()
+### .getSpaceByLocation()
 
 * 緯度経度及び高度を引数として受け取り空間オブジェクトを返す。
 
-### Space.getSPaceByZFXY()
+### .getSPaceByZFXY()
 
 * ZFXY を引数として受け取り空間オブジェクトを返す。
 
