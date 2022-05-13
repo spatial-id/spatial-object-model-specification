@@ -13,6 +13,12 @@ interface SOM {
 }
 ```
 
+### コンストラクタ
+
+* 空間ID、緯度経度及び高度、ZFXYのいずれかを引数として受け取り空間オブジェクトを返す。
+
+## Methods
+
 ### Space.getSpaceById()
 
 * ID を引数として受け取り空間オブジェクトを返す。
@@ -24,8 +30,6 @@ interface SOM {
 ### Space.getSPaceByZFXY()
 
 * ZFXY を引数として受け取り空間オブジェクトを返す。
-
-## Methods
 
 ### .up()
 
@@ -75,10 +79,9 @@ interface SOM {
 
 ## 参考: NodeJS ベースの SDK （があると仮定して）での実装例
 
-```
-const space = new Space
-spaceObject = space.getSpacebyId(1234567890)
+```node
+const space = new Space(12345678)
 
 // 南へ一つ、上へひとつ、東へひとつ移動したあとで、そこにスカイツリーの頂上があるかどうかを判定する。
-constr result = spaceObject.south().up().east().contains(139.81088744999997, 35.71027146141545, 634)
+const result = spaceObject.south().up().east().contains(139.81088744999997, 35.71027146141545, 634)
 ```
