@@ -9,13 +9,13 @@ interface SOM {
   id                 ID;
   center             An array of the lnglat;
   resolution:        The zoom level;
-  afxy:              The ZFXY.
+  zfxy:              The ZFXY.
 }
 ```
 
 ### コンストラクタ
 
-* 空間ID、緯度経度及び高度、ZFXYのいずれかを引数として受け取り空間オブジェクトを返す。引数が指定されてなかった場合は `/0/0/0/0` の空間オブジェクトを返す。
+* 空間ID、緯度経度及び高度、ZFXYのいずれかを引数として受け取り空間オブジェクトを返す。引数が指定されていない場合は `/0/0/0/0` の空間オブジェクトを返す。
 
 ## Methods
 
