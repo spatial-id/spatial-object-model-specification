@@ -71,3 +71,13 @@ interface SOM {
 ### .contains()
 
 * 指定された緯度経度が、指定されたボクセル内に含まれるかどうかを判定して bool 値を返す。
+
+
+## 参考: NodeJS ベースの SDK （があると仮定して）での実装例
+
+```
+const space = new Space
+spaceObject = space.getSpacebyId(1234567890)
+
+constr result = spaceObject.south().up().east().contains(123, 35, 100)
+```
