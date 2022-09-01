@@ -27,7 +27,7 @@ interface SOM {
 
 * 緯度経度及び高度を引数として受け取り空間オブジェクトを返す。
 
-### .getSPaceByZFXY()
+### .getSpaceByZFXY()
 
 * ZFXY を引数として受け取り空間オブジェクトを返す。
 
