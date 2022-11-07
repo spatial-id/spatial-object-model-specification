@@ -76,6 +76,9 @@ interface SOM {
 
 * 指定された緯度経度が、指定されたボクセル内に含まれるかどうかを判定して bool 値を返す。
 
+### .vertices3d()
+
+* 現在の空間オブジェクトの3Dバウンディングボックスを作る8点の座標を配列として返す。
 
 ## 参考: NodeJS ベースの SDK （があると仮定して）での実装例
 
@@ -83,5 +86,5 @@ interface SOM {
 const space = new Space(12345678) // 空間ID、緯度経度及び高度、ZFXYのいずれか
 
 // 南へ一つ、上へひとつ、東へひとつ移動したあとで、そこにスカイツリーの頂上があるかどうかを判定する。
-const result = space.south().up().east().contains(139.81088744999997, 35.71027146141545, 634)
+const result = space.south().up().east().contains({lng: 139.81088744999997, lat: 35.71027146141545, alt: 634})
 ```
